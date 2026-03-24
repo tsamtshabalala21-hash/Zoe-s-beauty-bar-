@@ -1,0 +1,26 @@
+function send(){
+
+let name=document.getElementById("name").value || "Customer"
+let date=document.getElementById("date").value || "Not selected"
+let time=document.getElementById("time").value || "Not selected"
+
+if(cart.length===0){
+alert("Please select a service")
+return
+}
+
+let phone="27713502434"
+
+let message=
+"Hi, I want to book:\n\n"+
+"Name: "+name+"\n"+
+"Date: "+date+"\n"+
+"Time: "+time+"\n\n"+
+cart.join("\n")+
+"\n\nTotal: R"+total
+
+let url="https://wa.me/"+phone+"?text="+encodeURIComponent(message)
+
+window.open(url,"_blank")
+
+  }
