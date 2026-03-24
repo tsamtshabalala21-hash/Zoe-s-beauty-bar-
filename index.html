@@ -1,90 +1,149 @@
-I'm<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Zoe’s Beauty Bar</title>
+
 <style>
-  body { font-family: Arial, sans-serif; margin:0; padding:0; line-height:1.5; background:#fff; color:#333; }
-  a { text-decoration:none; color:#fff; }
-  .header { background:#ff6f61; color:#fff; text-align:center; padding:40px 20px; }
-  .header h1 { margin:0; font-size:2.5em; }
-  .header p { font-size:1.2em; margin:10px 0; }
-  .btn { display:inline-block; background:#333; color:#fff; padding:12px 25px; border-radius:5px; margin-top:15px; font-weight:bold; }
-  .section { padding:40px 20px; max-width:800px; margin:auto; }
-  .section h2 { text-align:center; margin-bottom:25px; }
-  .price-list, .gallery, .promotions { display:flex; flex-wrap:wrap; justify-content:center; gap:20px; }
-  .price-item, .gallery-item, .promo-item { background:#f9f9f9; padding:20px; border-radius:10px; width:220px; text-align:center; }
-  .price-item span { display:block; margin-top:10px; font-weight:bold; }
-  .gallery-item img { width:100%; border-radius:10px; }
-  .contact { text-align:center; padding:40px 20px; background:#eee; }
-  .contact p { margin:10px 0; font-size:1.1em; }
+body {
+  font-family: Arial, sans-serif;
+  margin:0;
+  background:#fff;
+  color:#333;
+}
+
+.header {
+  background: linear-gradient(135deg, #ff6f61, #ff9478);
+  color:white;
+  text-align:center;
+  padding:50px 20px;
+}
+
+.header h1 { margin:0; font-size:2.5em; }
+.header p { margin:10px 0; }
+
+.btn {
+  display:inline-block;
+  background:#000;
+  color:#fff;
+  padding:12px 25px;
+  border-radius:30px;
+  margin-top:15px;
+  font-weight:bold;
+}
+
+.section {
+  padding:40px 20px;
+  max-width:1000px;
+  margin:auto;
+}
+
+.section h2 {
+  text-align:center;
+  color:#ff6f61;
+}
+
+.price-list, .gallery, .promotions {
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:20px;
+}
+
+.price-item, .promo-item {
+  background:#ffeaea;
+  padding:20px;
+  border-radius:15px;
+  width:220px;
+  text-align:center;
+  font-weight:bold;
+}
+
+.gallery img {
+  width:220px;
+  height:220px;
+  object-fit:cover;
+  border-radius:15px;
+}
+
+.contact {
+  background:#ffefef;
+  text-align:center;
+  padding:40px;
+}
+
+.whatsapp-float {
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25D366;
+  color:white;
+  padding:15px 20px;
+  border-radius:50px;
+  font-weight:bold;
+  text-decoration:none;
+}
 </style>
 </head>
+
 <body>
 
-<!-- Header -->
+<!-- HEADER -->
 <div class="header">
   <h1>Zoe’s Beauty Bar</h1>
   <p>Professional Braiding Services in Madibeng</p>
-  <a href="https://wa.me/27XXXXXXXXX?text=Hi%20I%20want%20to%20book" class="btn">Book on WhatsApp</a>
+  <a href="https://wa.me/27713502434?text=Hi%20I%20want%20to%20book" class="btn">Book on WhatsApp</a>
   <p>📍 Madibeng / Brits Area</p>
 </div>
 
-<!-- Price List -->
+<!-- PRICE LIST -->
 <div class="section">
-  <h2>Price List</h2><!-- Price List -->
-<div class="section">
-  <h2>Price List</h2>
+  <h2>Our Services</h2>
   <div class="price-list">
-    <div class="price-item">Waist Length<br><span>⭐ Most Popular – R150</span></div>
-    <div class="price-item">Knotless Braids<br><span>⭐ Most Popular – R180</span></div>
-    <div class="price-item">Short Bob<br><span>💎 Premium – R200</span></div>
-    <div class="price-item">Cornrows<br><span>🔥 Special Offer – R120</span></div>
-    <div class="price-item">Box Braids<br><span>⭐ Most Popular – R160</span></div>
-    <div class="price-item">Feed-in Braids<br><span>🔥 Special Offer – R140</span></div>
-    <div class="price-item">Micro Braids<br><span>💎 Premium – R220</span></div>
-    <div class="price-item">Ghana Braids<br><span>⭐ Most Popular – R130</span></div>
-    <div class="price-item">Twists / Senegalese<br><span>🔥 Special Offer – R150</span></div>
-    <div class="price-item">Crochet Braids<br><span>💎 Premium – R250</span></div>
-    <div class="price-item">Braided Updo / Styles<br><span>⭐ Most Popular – R180</span></div>
-    <div class="price-item">Partial Braids / Touch-up<br><span>🔥 Special Offer – R100</span></div>
-  </div>
-</div>
-  <div class="price-list">
-    <div class="price-item">Waist Length<br><span>⭐ Most Popular – R150</span></div>
-    <div class="price-item">Short Bob<br><span>💎 Premium – R200</span></div>
-    <div class="price-item">Cornrows<br><span>🔥 Special Offer – R120</span></div>
-    <div class="price-item">Knotless Braids<br><span>⭐ Most Popular – R180</span></div>
+    <div class="price-item">Waist Length<br>⭐ R150</div>
+    <div class="price-item">Knotless Braids<br>⭐ R180</div>
+    <div class="price-item">Box Braids<br>⭐ R160</div>
+    <div class="price-item">Cornrows<br>🔥 R120</div>
+    <div class="price-item">Feed-in Braids<br>🔥 R140</div>
+    <div class="price-item">Ghana Braids<br>⭐ R130</div>
+    <div class="price-item">Short Bob<br>💎 R200</div>
+    <div class="price-item">Twists<br>🔥 R150</div>
   </div>
 </div>
 
-<!-- Gallery -->
+<!-- GALLERY -->
 <div class="section">
   <h2>Our Work</h2>
   <div class="gallery">
-    <div class="gallery-item"><img src="images/hairstyle1.jpg" alt="Hairstyle 1"></div>
-    <div class="gallery-item"><img src="images/hairstyle2.jpg" alt="Hairstyle 2"></div>
-    <div class="gallery-item"><img src="images/hairstyle3.jpg" alt="Hairstyle 3"></div>
-    <div class="gallery-item"><img src="images/hairstyle4.jpg" alt="Hairstyle 4"></div>
+    <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1">
+    <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486">
+    <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f">
+    <img src="https://images.unsplash.com/photo-1596464716127-f2a82984de30">
   </div>
 </div>
 
-<!-- Promotions -->
+<!-- PROMOTIONS -->
 <div class="section">
-  <h2>Special Promotions</h2>
+  <h2>🔥 Promotions</h2>
   <div class="promotions">
-    <div class="promo-item">🔥 This Week Only:<br>Waist Length – R150 → R130</div>
-    <div class="promo-item">🔥 Bundle Deal:<br>Cornrows + Knotless – R250</div>
+    <div class="promo-item">Waist Length R150 → R130</div>
+    <div class="promo-item">Cornrows Special – R100</div>
   </div>
 </div>
 
-<!-- Contact -->
+<!-- CONTACT -->
 <div class="contact">
-  <h2>Contact Us</h2>
-  <p>📞 WhatsApp to Book: <a href="27713502434">Click Here</a></p>
+  <h2>Book Now</h2>
+  <p>Click below to book instantly on WhatsApp</p>
+  <a href="https://wa.me/27713502434?text=Hi%20I%20want%20to%20book" class="btn">Chat on WhatsApp</a>
   <p>📍 Madibeng / Brits Area</p>
 </div>
 
+<!-- FLOATING BUTTON -->
+<a href="https://wa.me/27713502434?text=Hi%20I%20want%20to%20book" class="whatsapp-float">
+  WhatsApp
+</a>
+
 </body>
-  </html>
+      </html>
